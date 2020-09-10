@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light py-xl-0 py-md-0 py-sm-0 py-2">
+      <div class="header__left">
+        <img
+          src="https://www.yatra.com/fresco/resources/beetle/images/newIcons/yatra_logo.svg"
+        />
+        <div class="header__input">
+          <i class="fas fa-search"></i>
+          <input
+            id="header_input_box"
+            class="d-none d-lg-flex"
+            placeholder="Search Your Desitnation"
+            type="text"
+          />
+        </div>
+        <div id="search_header_card" class="search__header__card d-none">
+          <div class="search__header__card__input">
+            <div id="header_close" class="header__close">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="header__input">
+              <i class="fas fa-search"></i>
+              <input
+                class="d-none d-lg-flex"
+                placeholder="Search Your Desitnation"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="search__box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Corrupti, totam obcaecati porro reprehenderit aliquam veniam nemo
+              omnis? Aliquid quas delectus nobis dolorem, perferendis deleniti
+              corporis et aut voluptas nihil dolor!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="header__center d-none d-xl-flex d-md-flex d-sm-flex">
+        <ul class="header__center__option">
+          <li class="header__center__item active" title="Home">
+            <a class="header_option-link text-decoration-none" href="#">
+              <i class="fas fa-hiking fa-icon"></i>
+            </a>
+            <div class="header__option-line"></div>
+          </li>
+          <li class="header__center__item">
+            <a class="header_option-link text-decoration-none" href="#">
+              <i class="fas fa-bed fa-icon"></i>
+            </a>
+            <div class="header__option-line"></div>
+          </li>
+          <li class="header__center__item">
+            <a class="header_option-link text-decoration-none" href="#">
+              <i class="fas fa-bus-alt fa-icon"></i>
+            </a>
+            <div class="header__option-line"></div>
+          </li>
+          <li class="header__center__item">
+            <a class="header_option-link text-decoration-none" href="#">
+              <i class="fas fa-utensils fa-icon"></i>
+            </a>
+            <div class="header__option-line"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="header__right">
+        <div class="header__info d-none d-xl-flex">
+          <img
+            src="https://scontent.fktm4-1.fna.fbcdn.net/v/t1.0-1/p160x160/82283491_3441566325855595_5102193243798372352_o.jpg?_nc_cat=101&_nc_sid=7206a8&_nc_ohc=cWMkj86sV6gAX_xAITC&_nc_ht=scontent.fktm4-1.fna&tp=6&oh=45fa6ddbe15b53f405cc4a3f4a3b800d&oe=5F704229"
+          />
+          <span class="header__info__name">Aakash</span>
+        </div>
+        <div class="header__items d-sm-flex d-md-flex d-lg-none">
+          <a class="header_option-link text-decoration-none" href="#">
+            <i class="fas fa-bars fa-icon"> </i>
+          </a>
+        </div>
+        <div class="header__items">
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="header__items">
+          <i class="fab fa-facebook-messenger"></i>
+        </div>
+        <div class="header__items">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div class="header__items">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </nav>
+    <main></main>
+  </body>
+  <script>
+    var searchboxelement = document.getElementById("search_header_card");
+    var headerclose = document.getElementById("header_close");
+
+    document
+      .getElementById("header_input_box")
+      .addEventListener("click", function () {
+        searchboxelement.classList.remove("d-none");
+      });
+
+    document
+      .getElementById("header_close")
+      .addEventListener("click", function () {
+        searchboxelement.classList.add("d-none");
+      });
+  </script>
+</html>

@@ -258,3 +258,9 @@ nav.navbar {
   background-color: #e4e6eb;
   cursor: pointer;
 }
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
